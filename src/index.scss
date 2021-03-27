@@ -1,0 +1,93 @@
+// CSS CUSTOM PROPERTIES (VARIABLES)
+body {
+  --default-font-family: "Ubuntu", "sans-sarif";
+  --default-font-size: 1.6rem;
+  --default-box-shadow: 0 5px 5px -5px rgba(#000, 0.15);
+  --color-gray: #c2c1c1;
+  --color-gray-light: #c8c8c8;
+  --color-primary: rgb(240, 46, 78);
+  --color-white: #fff;
+  --color-black: #000;
+  --color-blue: rgb(67, 4, 240);
+  --background-color: #f2f2f2;
+}
+
+// FOR BASE STYLES
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // This defines the value of 1rem.
+  font-size: 62.5%; // 62.5% of 16px (default browser font size) = 10px
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--default-font-size);
+  font-family: var(--default-font-family);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-gray);
+}
+
+// GENERIC STYLES
+button {
+  cursor: pointer;
+  background-color: var(--color-white);
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  // margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  // padding: 1rem;
+  min-height: 100vh;
+
+  @media (min-width: 600px) {
+    // padding: 0 0rem;
+
+    &__brand-container-logo {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+// TYPOGRAPHY
+.heading-primary {
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 2.7rem;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}

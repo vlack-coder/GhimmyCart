@@ -1,0 +1,31 @@
+.cart-items-collection {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 5rem;
+
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+
+  .message-box {
+    margin: 2rem auto;
+  }
+
+  &__image {
+    margin:2rem auto;
+    font-size: 15rem;
+  }
+
+  &__summary {
+    color: var(--color-gray);
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 900px) {
+    margin-right: 0;
+    padding: 0rem 4rem;
+  }
+}

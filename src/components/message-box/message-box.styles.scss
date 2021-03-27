@@ -1,0 +1,19 @@
+.message-box {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  &__message {
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .custom-button {
+    width: fit-content;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+}

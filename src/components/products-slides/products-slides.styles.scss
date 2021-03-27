@@ -1,0 +1,35 @@
+.products-slides {
+  max-height: 42rem;
+  max-width: 170rem;
+  width: 100%;
+  // margin-bottom: 3rem;
+  // background-color: white;
+  background-color: var(--color-gray);
+  // padding: 0 5px
+
+  li {
+    display: flex;
+  }
+  .slid {
+    padding: 100rem;
+    background-color: white;
+  background-color: var(--color-gray);
+}
+
+  img {
+    max-width: 30%;
+    height: 90%;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 14px;
+  }
+
+  @media (min-width: 700px) {
+    height: 50vh;
+
+    img {
+      object-fit: fill;
+      width: 80%;
+    }
+  }
+}

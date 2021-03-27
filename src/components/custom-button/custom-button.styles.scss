@@ -1,0 +1,15 @@
+.custom-button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  height: 4rem;
+  padding: 0 1rem;
+  border-radius: 5rem;
+  outline: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  &:hover {
+    transform: scale(1.01);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
